@@ -1,0 +1,1087 @@
+17-02-2024 05:27:52.079 INFO o.h.v.i.u.Version HV000001: Hibernate Validator 8.0.1.Final
+17-02-2024 05:27:52.220 INFO o.s.b.StartupInfoLogger Starting TeknofestProject3Application using Java 17.0.8 with PID 2604 (C:\Users\furka\Desktop\Kafka\teknofest-project-3\build\classes\java\main started by HONOR in C:\Users\furka\Desktop\Kafka\teknofest-project-3)
+17-02-2024 05:27:52.223 INFO o.s.b.SpringApplication The following 1 profile is active: "dev"
+17-02-2024 05:27:52.372 INFO o.s.b.l.DeferredLog Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+17-02-2024 05:27:52.374 INFO o.s.b.l.DeferredLog For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+17-02-2024 05:27:54.743 INFO o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+17-02-2024 05:27:54.938 INFO o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 161 ms. Found 1 JPA repository interface.
+17-02-2024 05:27:56.595 INFO o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+17-02-2024 05:27:56.616 INFO o.a.j.l.DirectJDKLog Initializing ProtocolHandler ["http-nio-8080"]
+17-02-2024 05:27:56.621 INFO o.a.j.l.DirectJDKLog Starting service [Tomcat]
+17-02-2024 05:27:56.622 INFO o.a.j.l.DirectJDKLog Starting Servlet engine: [Apache Tomcat/10.1.18]
+17-02-2024 05:27:56.783 INFO o.a.j.l.DirectJDKLog Initializing Spring embedded WebApplicationContext
+17-02-2024 05:27:56.785 INFO o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 4408 ms
+17-02-2024 05:27:57.183 INFO o.h.j.i.u.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+17-02-2024 05:27:57.353 INFO o.h.Version HHH000412: Hibernate ORM core version 6.2.20.Final
+17-02-2024 05:27:57.360 INFO o.h.c.Environment HHH000406: Using bytecode reflection optimizer
+17-02-2024 05:27:58.297 INFO o.s.o.j.p.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer
+17-02-2024 05:27:58.368 INFO c.z.h.HikariDataSource HikariPool-1 - Starting...
+17-02-2024 05:27:58.862 INFO c.z.h.p.HikariPool HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3f4e0840
+17-02-2024 05:27:58.867 INFO c.z.h.HikariDataSource HikariPool-1 - Start completed.
+17-02-2024 05:27:58.983 WARN o.h.e.j.d.i.DialectFactoryImpl HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+17-02-2024 05:28:01.339 INFO o.h.e.t.j.p.i.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+17-02-2024 05:28:01.560 INFO o.s.o.j.AbstractEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+17-02-2024 05:28:03.060 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+17-02-2024 05:28:04.100 INFO o.s.b.d.a.OptionalLiveReloadServer LiveReload server is running on port 35729
+17-02-2024 05:28:04.222 INFO o.a.j.l.DirectJDKLog Starting ProtocolHandler ["http-nio-8080"]
+17-02-2024 05:28:04.272 INFO o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+17-02-2024 05:28:04.396 INFO o.a.k.c.c.AbstractConfig ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:59092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-KafkaRouteConsumer-GroupId-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = KafkaRouteConsumer-GroupId
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+17-02-2024 05:28:04.670 INFO o.a.k.c.u.AppInfoParser$AppInfo Kafka version: 3.4.1
+17-02-2024 05:28:04.671 INFO o.a.k.c.u.AppInfoParser$AppInfo Kafka commitId: 8a516edc2755df89
+17-02-2024 05:28:04.672 INFO o.a.k.c.u.AppInfoParser$AppInfo Kafka startTimeMs: 1708136884667
+17-02-2024 05:28:04.681 INFO o.a.k.c.c.KafkaConsumer [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Subscribed to topic(s): route
+17-02-2024 05:28:04.732 INFO o.s.b.StartupInfoLogger Started TeknofestProject3Application in 15.301 seconds (process running for 18.139)
+17-02-2024 05:28:05.771 INFO o.a.k.c.Metadata [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Resetting the last seen epoch of partition route-0 to 0 since the associated topicId changed from null to AMShfhJVTG6wyebKAZ6Htg
+17-02-2024 05:28:05.776 INFO o.a.k.c.Metadata [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Cluster ID: hNtzRzKdTvKtys62l18jpQ
+17-02-2024 05:28:05.784 INFO o.a.k.c.c.i.AbstractCoordinator$FindCoordinatorResponseHandler [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Discovered group coordinator localhost:59092 (id: 2147483646 rack: null)
+17-02-2024 05:28:05.790 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] (Re-)joining group
+17-02-2024 05:28:06.253 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Request joining group due to: need to re-join with the given member-id: consumer-KafkaRouteConsumer-GroupId-1-33d79ea8-7bc8-4b7d-a6df-6b5930fd1080
+17-02-2024 05:28:06.254 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+17-02-2024 05:28:06.255 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] (Re-)joining group
+17-02-2024 05:28:09.428 INFO o.a.k.c.c.i.AbstractCoordinator$JoinGroupResponseHandler [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Successfully joined group with generation Generation{generationId=57, memberId='consumer-KafkaRouteConsumer-GroupId-1-33d79ea8-7bc8-4b7d-a6df-6b5930fd1080', protocol='range'}
+17-02-2024 05:28:09.434 INFO o.a.k.c.c.i.ConsumerCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Finished assignment for group at generation 57: {consumer-KafkaRouteConsumer-GroupId-1-33d79ea8-7bc8-4b7d-a6df-6b5930fd1080=Assignment(partitions=[route-0])}
+17-02-2024 05:28:09.867 INFO o.a.k.c.c.i.AbstractCoordinator$SyncGroupResponseHandler [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Successfully synced group in generation Generation{generationId=57, memberId='consumer-KafkaRouteConsumer-GroupId-1-33d79ea8-7bc8-4b7d-a6df-6b5930fd1080', protocol='range'}
+17-02-2024 05:28:09.869 INFO o.a.k.c.c.i.ConsumerCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Notifying assignor about the new Assignment(partitions=[route-0])
+17-02-2024 05:28:09.876 INFO o.a.k.c.c.i.ConsumerCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Adding newly assigned partitions: route-0
+17-02-2024 05:28:09.956 INFO o.a.k.c.c.i.ConsumerCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Setting offset for partition route-0 to the committed offset FetchPosition{offset=58, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:59092 (id: 1 rack: null)], epoch=0}}
+17-02-2024 05:28:09.959 INFO o.s.c.l.LogAccessor KafkaRouteConsumer-GroupId: partitions assigned: [route-0]
+17-02-2024 05:29:20.010 INFO o.a.j.l.DirectJDKLog Initializing Spring DispatcherServlet 'dispatcherServlet'
+17-02-2024 05:29:20.011 INFO o.s.w.s.FrameworkServlet Initializing Servlet 'dispatcherServlet'
+17-02-2024 05:29:20.014 INFO o.s.w.s.FrameworkServlet Completed initialization in 3 ms
+17-02-2024 05:29:20.288 ERROR o.a.j.l.DirectJDKLog Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.http.converter.HttpMessageConversionException: Type definition error: [array type, component type: [simple type, class short]]] with root cause
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `short[]`: no String-argument constructor/factory method to deserialize from String value ('v')
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 2, column: 11] (through reference chain: com.teknofest.dto.request.RouteRequestDto["route"])
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1887)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:414)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1370)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._deserializeFromString(StdDeserializer.java:311)
+	at com.fasterxml.jackson.databind.deser.std.PrimitiveArrayDeserializers.handleNonArray(PrimitiveArrayDeserializers.java:219)
+	at com.fasterxml.jackson.databind.deser.std.PrimitiveArrayDeserializers$ShortDeser.deserialize(PrimitiveArrayDeserializers.java:589)
+	at com.fasterxml.jackson.databind.deser.std.PrimitiveArrayDeserializers$ShortDeser.deserialize(PrimitiveArrayDeserializers.java:563)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:393)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:185)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:2125)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1501)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:395)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:354)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:183)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:163)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:136)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+17-02-2024 05:29:42.787 WARN o.s.w.s.h.AbstractHandlerExceptionResolver Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot coerce empty String ("") to element of `short[]` (but could if coercion was enabled using `CoercionConfig`)]
+17-02-2024 05:30:01.138 INFO o.s.a.AbstractOpenApiResource Init duration for springdoc-openapi is: 750 ms
+17-02-2024 05:31:02.241 ERROR o.a.j.l.DirectJDKLog Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.NotBlank' validating type 'short[]'. Check configuration for 'route'] with root cause
+jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.NotBlank' validating type 'short[]'. Check configuration for 'route'
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getExceptionForNullValidator(ConstraintTree.java:116)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getInitializedConstraintValidator(ConstraintTree.java:162)
+	at org.hibernate.validator.internal.engine.constraintvalidation.SimpleConstraintTree.validateConstraints(SimpleConstraintTree.java:58)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:75)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.doValidateConstraint(MetaConstraint.java:130)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:123)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateMetaConstraint(ValidatorImpl.java:555)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForSingleDefaultGroupElement(ValidatorImpl.java:518)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:488)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:450)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:400)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:172)
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:104)
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:66)
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:932)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:248)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:142)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+17-02-2024 05:31:21.503 WARN o.s.w.s.h.AbstractHandlerExceptionResolver Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot coerce empty String ("") to element of `short[]` (but could if coercion was enabled using `CoercionConfig`)]
+17-02-2024 05:32:00.605 WARN o.s.w.s.h.AbstractHandlerExceptionResolver Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): expected a value]
+17-02-2024 05:32:07.196 WARN o.s.w.s.h.AbstractHandlerExceptionResolver Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): expected a value]
+17-02-2024 05:32:17.958 ERROR o.a.j.l.DirectJDKLog Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.NotBlank' validating type 'short[]'. Check configuration for 'route'] with root cause
+jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.NotBlank' validating type 'short[]'. Check configuration for 'route'
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getExceptionForNullValidator(ConstraintTree.java:116)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getInitializedConstraintValidator(ConstraintTree.java:162)
+	at org.hibernate.validator.internal.engine.constraintvalidation.SimpleConstraintTree.validateConstraints(SimpleConstraintTree.java:58)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:75)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.doValidateConstraint(MetaConstraint.java:130)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:123)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateMetaConstraint(ValidatorImpl.java:555)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForSingleDefaultGroupElement(ValidatorImpl.java:518)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:488)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:450)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:400)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:172)
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:104)
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:66)
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:932)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:248)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:142)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+17-02-2024 05:32:39.178 INFO o.a.k.c.c.i.ConsumerCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Revoke previously assigned partitions route-0
+17-02-2024 05:32:39.179 INFO o.s.c.l.LogAccessor KafkaRouteConsumer-GroupId: partitions revoked: [route-0]
+17-02-2024 05:32:39.181 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Member consumer-KafkaRouteConsumer-GroupId-1-33d79ea8-7bc8-4b7d-a6df-6b5930fd1080 sending LeaveGroup request to coordinator localhost:59092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+17-02-2024 05:32:39.182 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Resetting generation and member id due to: consumer pro-actively leaving the group
+17-02-2024 05:32:39.183 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Request joining group due to: consumer pro-actively leaving the group
+17-02-2024 05:32:39.183 INFO o.a.k.c.c.KafkaConsumer [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Unsubscribed all topics or patterns and assigned partitions
+17-02-2024 05:32:39.184 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Resetting generation and member id due to: consumer pro-actively leaving the group
+17-02-2024 05:32:39.184 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Request joining group due to: consumer pro-actively leaving the group
+17-02-2024 05:32:39.726 INFO o.a.k.c.m.Metrics Metrics scheduler closed
+17-02-2024 05:32:39.727 INFO o.a.k.c.m.Metrics Closing reporter org.apache.kafka.common.metrics.JmxReporter
+17-02-2024 05:32:39.728 INFO o.a.k.c.m.Metrics Metrics reporters closed
+17-02-2024 05:32:39.749 INFO o.a.k.c.u.AppInfoParser App info kafka.consumer for consumer-KafkaRouteConsumer-GroupId-1 unregistered
+17-02-2024 05:32:39.752 INFO o.s.c.l.LogAccessor KafkaRouteConsumer-GroupId: Consumer stopped
+17-02-2024 05:32:39.823 WARN o.s.b.f.s.DisposableBeanAdapter Invocation of close method failed on bean with name 'getInstance': Client is connected (32100)
+17-02-2024 05:32:39.826 INFO o.s.o.j.AbstractEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+17-02-2024 05:32:39.838 INFO c.z.h.HikariDataSource HikariPool-1 - Shutdown initiated...
+17-02-2024 05:32:39.848 INFO c.z.h.HikariDataSource HikariPool-1 - Shutdown completed.
+17-02-2024 05:33:06.981 INFO o.h.v.i.u.Version HV000001: Hibernate Validator 8.0.1.Final
+17-02-2024 05:33:07.104 INFO o.s.b.StartupInfoLogger Starting TeknofestProject3Application using Java 17.0.8 with PID 20392 (C:\Users\furka\Desktop\Kafka\teknofest-project-3\build\classes\java\main started by HONOR in C:\Users\furka\Desktop\Kafka\teknofest-project-3)
+17-02-2024 05:33:07.107 INFO o.s.b.SpringApplication The following 1 profile is active: "dev"
+17-02-2024 05:33:07.263 INFO o.s.b.l.DeferredLog Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+17-02-2024 05:33:07.264 INFO o.s.b.l.DeferredLog For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+17-02-2024 05:33:09.512 INFO o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+17-02-2024 05:33:09.656 INFO o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 122 ms. Found 1 JPA repository interface.
+17-02-2024 05:33:11.363 INFO o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+17-02-2024 05:33:11.390 INFO o.a.j.l.DirectJDKLog Initializing ProtocolHandler ["http-nio-8080"]
+17-02-2024 05:33:11.396 INFO o.a.j.l.DirectJDKLog Starting service [Tomcat]
+17-02-2024 05:33:11.396 INFO o.a.j.l.DirectJDKLog Starting Servlet engine: [Apache Tomcat/10.1.18]
+17-02-2024 05:33:11.597 INFO o.a.j.l.DirectJDKLog Initializing Spring embedded WebApplicationContext
+17-02-2024 05:33:11.598 INFO o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 4332 ms
+17-02-2024 05:33:12.036 INFO o.h.j.i.u.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+17-02-2024 05:33:12.207 INFO o.h.Version HHH000412: Hibernate ORM core version 6.2.20.Final
+17-02-2024 05:33:12.213 INFO o.h.c.Environment HHH000406: Using bytecode reflection optimizer
+17-02-2024 05:33:13.075 INFO o.s.o.j.p.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer
+17-02-2024 05:33:13.171 INFO c.z.h.HikariDataSource HikariPool-1 - Starting...
+17-02-2024 05:33:13.604 INFO c.z.h.p.HikariPool HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@143c320e
+17-02-2024 05:33:13.609 INFO c.z.h.HikariDataSource HikariPool-1 - Start completed.
+17-02-2024 05:33:13.712 WARN o.h.e.j.d.i.DialectFactoryImpl HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+17-02-2024 05:33:16.068 INFO o.h.e.t.j.p.i.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+17-02-2024 05:33:16.266 INFO o.s.o.j.AbstractEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+17-02-2024 05:33:17.838 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+17-02-2024 05:33:19.131 INFO o.s.b.d.a.OptionalLiveReloadServer LiveReload server is running on port 35729
+17-02-2024 05:33:19.252 INFO o.a.j.l.DirectJDKLog Starting ProtocolHandler ["http-nio-8080"]
+17-02-2024 05:33:19.302 INFO o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+17-02-2024 05:33:19.438 INFO o.a.k.c.c.AbstractConfig ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:59092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-KafkaRouteConsumer-GroupId-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = KafkaRouteConsumer-GroupId
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+17-02-2024 05:33:19.695 INFO o.a.k.c.u.AppInfoParser$AppInfo Kafka version: 3.4.1
+17-02-2024 05:33:19.696 INFO o.a.k.c.u.AppInfoParser$AppInfo Kafka commitId: 8a516edc2755df89
+17-02-2024 05:33:19.696 INFO o.a.k.c.u.AppInfoParser$AppInfo Kafka startTimeMs: 1708137199691
+17-02-2024 05:33:19.705 INFO o.a.k.c.c.KafkaConsumer [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Subscribed to topic(s): route
+17-02-2024 05:33:19.753 INFO o.s.b.StartupInfoLogger Started TeknofestProject3Application in 14.562 seconds (process running for 16.888)
+17-02-2024 05:33:20.755 INFO o.a.k.c.Metadata [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Resetting the last seen epoch of partition route-0 to 0 since the associated topicId changed from null to AMShfhJVTG6wyebKAZ6Htg
+17-02-2024 05:33:20.761 INFO o.a.k.c.Metadata [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Cluster ID: hNtzRzKdTvKtys62l18jpQ
+17-02-2024 05:33:20.765 INFO o.a.k.c.c.i.AbstractCoordinator$FindCoordinatorResponseHandler [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Discovered group coordinator localhost:59092 (id: 2147483646 rack: null)
+17-02-2024 05:33:20.772 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] (Re-)joining group
+17-02-2024 05:33:20.839 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Request joining group due to: need to re-join with the given member-id: consumer-KafkaRouteConsumer-GroupId-1-739310e8-27e1-4fb2-950c-87fae622c8a1
+17-02-2024 05:33:20.841 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+17-02-2024 05:33:20.842 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] (Re-)joining group
+17-02-2024 05:33:23.875 INFO o.a.k.c.c.i.AbstractCoordinator$JoinGroupResponseHandler [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Successfully joined group with generation Generation{generationId=59, memberId='consumer-KafkaRouteConsumer-GroupId-1-739310e8-27e1-4fb2-950c-87fae622c8a1', protocol='range'}
+17-02-2024 05:33:23.880 INFO o.a.k.c.c.i.ConsumerCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Finished assignment for group at generation 59: {consumer-KafkaRouteConsumer-GroupId-1-739310e8-27e1-4fb2-950c-87fae622c8a1=Assignment(partitions=[route-0])}
+17-02-2024 05:33:23.917 INFO o.a.k.c.c.i.AbstractCoordinator$SyncGroupResponseHandler [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Successfully synced group in generation Generation{generationId=59, memberId='consumer-KafkaRouteConsumer-GroupId-1-739310e8-27e1-4fb2-950c-87fae622c8a1', protocol='range'}
+17-02-2024 05:33:23.919 INFO o.a.k.c.c.i.ConsumerCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Notifying assignor about the new Assignment(partitions=[route-0])
+17-02-2024 05:33:23.926 INFO o.a.k.c.c.i.ConsumerCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Adding newly assigned partitions: route-0
+17-02-2024 05:33:23.965 INFO o.a.k.c.c.i.ConsumerCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Setting offset for partition route-0 to the committed offset FetchPosition{offset=58, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:59092 (id: 1 rack: null)], epoch=0}}
+17-02-2024 05:33:23.968 INFO o.s.c.l.LogAccessor KafkaRouteConsumer-GroupId: partitions assigned: [route-0]
+17-02-2024 05:33:40.524 INFO o.a.j.l.DirectJDKLog Initializing Spring DispatcherServlet 'dispatcherServlet'
+17-02-2024 05:33:40.525 INFO o.s.w.s.FrameworkServlet Initializing Servlet 'dispatcherServlet'
+17-02-2024 05:33:40.529 INFO o.s.w.s.FrameworkServlet Completed initialization in 4 ms
+17-02-2024 05:33:40.936 WARN o.s.w.s.h.AbstractHandlerExceptionResolver Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): expected a value]
+17-02-2024 05:33:56.690 WARN o.s.w.s.h.AbstractHandlerExceptionResolver Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot coerce empty String ("") to element of `short[]` (but could if coercion was enabled using `CoercionConfig`)]
+17-02-2024 05:34:19.821 ERROR o.a.j.l.DirectJDKLog Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.NotBlank' validating type 'short[]'. Check configuration for 'route'] with root cause
+jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.NotBlank' validating type 'short[]'. Check configuration for 'route'
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getExceptionForNullValidator(ConstraintTree.java:116)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getInitializedConstraintValidator(ConstraintTree.java:162)
+	at org.hibernate.validator.internal.engine.constraintvalidation.SimpleConstraintTree.validateConstraints(SimpleConstraintTree.java:58)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:75)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.doValidateConstraint(MetaConstraint.java:130)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:123)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateMetaConstraint(ValidatorImpl.java:555)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForSingleDefaultGroupElement(ValidatorImpl.java:518)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:488)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:450)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:400)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:172)
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:104)
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:66)
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:932)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:248)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:142)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+17-02-2024 05:36:27.995 INFO o.a.k.c.c.i.ConsumerCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Revoke previously assigned partitions route-0
+17-02-2024 05:36:27.999 INFO o.s.c.l.LogAccessor KafkaRouteConsumer-GroupId: partitions revoked: [route-0]
+17-02-2024 05:36:28.000 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Member consumer-KafkaRouteConsumer-GroupId-1-739310e8-27e1-4fb2-950c-87fae622c8a1 sending LeaveGroup request to coordinator localhost:59092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+17-02-2024 05:36:28.002 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Resetting generation and member id due to: consumer pro-actively leaving the group
+17-02-2024 05:36:28.002 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Request joining group due to: consumer pro-actively leaving the group
+17-02-2024 05:36:28.003 INFO o.a.k.c.c.KafkaConsumer [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Unsubscribed all topics or patterns and assigned partitions
+17-02-2024 05:36:28.004 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Resetting generation and member id due to: consumer pro-actively leaving the group
+17-02-2024 05:36:28.004 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Request joining group due to: consumer pro-actively leaving the group
+17-02-2024 05:36:28.072 INFO o.a.k.c.m.Metrics Metrics scheduler closed
+17-02-2024 05:36:28.073 INFO o.a.k.c.m.Metrics Closing reporter org.apache.kafka.common.metrics.JmxReporter
+17-02-2024 05:36:28.073 INFO o.a.k.c.m.Metrics Metrics reporters closed
+17-02-2024 05:36:28.090 INFO o.a.k.c.u.AppInfoParser App info kafka.consumer for consumer-KafkaRouteConsumer-GroupId-1 unregistered
+17-02-2024 05:36:28.091 INFO o.s.c.l.LogAccessor KafkaRouteConsumer-GroupId: Consumer stopped
+17-02-2024 05:36:28.173 WARN o.s.b.f.s.DisposableBeanAdapter Invocation of close method failed on bean with name 'getInstance': Client is connected (32100)
+17-02-2024 05:36:28.175 INFO o.s.o.j.AbstractEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+17-02-2024 05:36:28.196 INFO c.z.h.HikariDataSource HikariPool-1 - Shutdown initiated...
+17-02-2024 05:36:28.215 INFO c.z.h.HikariDataSource HikariPool-1 - Shutdown completed.
+17-02-2024 05:37:00.161 INFO o.h.v.i.u.Version HV000001: Hibernate Validator 8.0.1.Final
+17-02-2024 05:37:00.279 INFO o.s.b.StartupInfoLogger Starting TeknofestProject3Application using Java 17.0.8 with PID 3312 (C:\Users\furka\Desktop\Kafka\teknofest-project-3\build\classes\java\main started by HONOR in C:\Users\furka\Desktop\Kafka\teknofest-project-3)
+17-02-2024 05:37:00.282 INFO o.s.b.SpringApplication The following 1 profile is active: "dev"
+17-02-2024 05:37:00.419 INFO o.s.b.l.DeferredLog Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+17-02-2024 05:37:00.420 INFO o.s.b.l.DeferredLog For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+17-02-2024 05:37:02.657 INFO o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+17-02-2024 05:37:02.807 INFO o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 125 ms. Found 1 JPA repository interface.
+17-02-2024 05:37:04.379 INFO o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+17-02-2024 05:37:04.400 INFO o.a.j.l.DirectJDKLog Initializing ProtocolHandler ["http-nio-8080"]
+17-02-2024 05:37:04.405 INFO o.a.j.l.DirectJDKLog Starting service [Tomcat]
+17-02-2024 05:37:04.406 INFO o.a.j.l.DirectJDKLog Starting Servlet engine: [Apache Tomcat/10.1.18]
+17-02-2024 05:37:04.580 INFO o.a.j.l.DirectJDKLog Initializing Spring embedded WebApplicationContext
+17-02-2024 05:37:04.582 INFO o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 4158 ms
+17-02-2024 05:37:04.979 INFO o.h.j.i.u.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+17-02-2024 05:37:05.135 INFO o.h.Version HHH000412: Hibernate ORM core version 6.2.20.Final
+17-02-2024 05:37:05.141 INFO o.h.c.Environment HHH000406: Using bytecode reflection optimizer
+17-02-2024 05:37:05.948 INFO o.s.o.j.p.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer
+17-02-2024 05:37:06.033 INFO c.z.h.HikariDataSource HikariPool-1 - Starting...
+17-02-2024 05:37:06.503 INFO c.z.h.p.HikariPool HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7059cf89
+17-02-2024 05:37:06.508 INFO c.z.h.HikariDataSource HikariPool-1 - Start completed.
+17-02-2024 05:37:06.639 WARN o.h.e.j.d.i.DialectFactoryImpl HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+17-02-2024 05:37:10.171 INFO o.h.e.t.j.p.i.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+17-02-2024 05:37:10.744 INFO o.s.o.j.AbstractEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+17-02-2024 05:37:13.247 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+17-02-2024 05:37:14.509 INFO o.s.b.d.a.OptionalLiveReloadServer LiveReload server is running on port 35729
+17-02-2024 05:37:15.024 INFO o.a.j.l.DirectJDKLog Starting ProtocolHandler ["http-nio-8080"]
+17-02-2024 05:37:15.180 INFO o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+17-02-2024 05:37:15.593 INFO o.a.k.c.c.AbstractConfig ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:59092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-KafkaRouteConsumer-GroupId-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = KafkaRouteConsumer-GroupId
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+17-02-2024 05:37:16.009 INFO o.a.k.c.u.AppInfoParser$AppInfo Kafka version: 3.4.1
+17-02-2024 05:37:16.010 INFO o.a.k.c.u.AppInfoParser$AppInfo Kafka commitId: 8a516edc2755df89
+17-02-2024 05:37:16.010 INFO o.a.k.c.u.AppInfoParser$AppInfo Kafka startTimeMs: 1708137436004
+17-02-2024 05:37:16.023 INFO o.a.k.c.c.KafkaConsumer [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Subscribed to topic(s): route
+17-02-2024 05:37:16.082 INFO o.s.b.StartupInfoLogger Started TeknofestProject3Application in 17.872 seconds (process running for 20.6)
+17-02-2024 05:37:17.378 INFO o.a.k.c.Metadata [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Resetting the last seen epoch of partition route-0 to 0 since the associated topicId changed from null to AMShfhJVTG6wyebKAZ6Htg
+17-02-2024 05:37:17.384 INFO o.a.k.c.Metadata [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Cluster ID: hNtzRzKdTvKtys62l18jpQ
+17-02-2024 05:37:17.387 INFO o.a.k.c.c.i.AbstractCoordinator$FindCoordinatorResponseHandler [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Discovered group coordinator localhost:59092 (id: 2147483646 rack: null)
+17-02-2024 05:37:17.395 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] (Re-)joining group
+17-02-2024 05:37:17.493 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Request joining group due to: need to re-join with the given member-id: consumer-KafkaRouteConsumer-GroupId-1-6731792a-66f2-4100-9337-5b147cf1c949
+17-02-2024 05:37:17.495 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+17-02-2024 05:37:17.495 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] (Re-)joining group
+17-02-2024 05:37:21.197 INFO o.a.k.c.c.i.AbstractCoordinator$JoinGroupResponseHandler [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Successfully joined group with generation Generation{generationId=61, memberId='consumer-KafkaRouteConsumer-GroupId-1-6731792a-66f2-4100-9337-5b147cf1c949', protocol='range'}
+17-02-2024 05:37:21.204 INFO o.a.k.c.c.i.ConsumerCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Finished assignment for group at generation 61: {consumer-KafkaRouteConsumer-GroupId-1-6731792a-66f2-4100-9337-5b147cf1c949=Assignment(partitions=[route-0])}
+17-02-2024 05:37:21.880 INFO o.a.k.c.c.i.AbstractCoordinator$SyncGroupResponseHandler [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Successfully synced group in generation Generation{generationId=61, memberId='consumer-KafkaRouteConsumer-GroupId-1-6731792a-66f2-4100-9337-5b147cf1c949', protocol='range'}
+17-02-2024 05:37:21.882 INFO o.a.k.c.c.i.ConsumerCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Notifying assignor about the new Assignment(partitions=[route-0])
+17-02-2024 05:37:21.894 INFO o.a.k.c.c.i.ConsumerCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Adding newly assigned partitions: route-0
+17-02-2024 05:37:21.998 INFO o.a.k.c.c.i.ConsumerCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Setting offset for partition route-0 to the committed offset FetchPosition{offset=58, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:59092 (id: 1 rack: null)], epoch=0}}
+17-02-2024 05:37:22.001 INFO o.s.c.l.LogAccessor KafkaRouteConsumer-GroupId: partitions assigned: [route-0]
+17-02-2024 05:37:23.720 INFO o.a.j.l.DirectJDKLog Initializing Spring DispatcherServlet 'dispatcherServlet'
+17-02-2024 05:37:23.721 INFO o.s.w.s.FrameworkServlet Initializing Servlet 'dispatcherServlet'
+17-02-2024 05:37:23.727 INFO o.s.w.s.FrameworkServlet Completed initialization in 6 ms
+17-02-2024 05:37:24.544 ERROR o.a.j.l.DirectJDKLog Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.Pattern' validating type 'short[]'. Check configuration for 'route'] with root cause
+jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.Pattern' validating type 'short[]'. Check configuration for 'route'
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getExceptionForNullValidator(ConstraintTree.java:116)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getInitializedConstraintValidator(ConstraintTree.java:162)
+	at org.hibernate.validator.internal.engine.constraintvalidation.SimpleConstraintTree.validateConstraints(SimpleConstraintTree.java:58)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:75)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.doValidateConstraint(MetaConstraint.java:130)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:123)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateMetaConstraint(ValidatorImpl.java:555)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForSingleDefaultGroupElement(ValidatorImpl.java:518)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:488)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:450)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:400)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:172)
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:104)
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:66)
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:932)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:248)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:142)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+17-02-2024 05:38:33.108 INFO o.a.k.c.c.i.ConsumerCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Revoke previously assigned partitions route-0
+17-02-2024 05:38:33.111 INFO o.s.c.l.LogAccessor KafkaRouteConsumer-GroupId: partitions revoked: [route-0]
+17-02-2024 05:38:33.112 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Member consumer-KafkaRouteConsumer-GroupId-1-6731792a-66f2-4100-9337-5b147cf1c949 sending LeaveGroup request to coordinator localhost:59092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+17-02-2024 05:38:33.114 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Resetting generation and member id due to: consumer pro-actively leaving the group
+17-02-2024 05:38:33.114 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Request joining group due to: consumer pro-actively leaving the group
+17-02-2024 05:38:33.114 INFO o.a.k.c.c.KafkaConsumer [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Unsubscribed all topics or patterns and assigned partitions
+17-02-2024 05:38:33.115 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Resetting generation and member id due to: consumer pro-actively leaving the group
+17-02-2024 05:38:33.116 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Request joining group due to: consumer pro-actively leaving the group
+17-02-2024 05:38:33.180 INFO o.a.k.c.m.Metrics Metrics scheduler closed
+17-02-2024 05:38:33.181 INFO o.a.k.c.m.Metrics Closing reporter org.apache.kafka.common.metrics.JmxReporter
+17-02-2024 05:38:33.182 INFO o.a.k.c.m.Metrics Metrics reporters closed
+17-02-2024 05:38:33.204 INFO o.a.k.c.u.AppInfoParser App info kafka.consumer for consumer-KafkaRouteConsumer-GroupId-1 unregistered
+17-02-2024 05:38:33.206 INFO o.s.c.l.LogAccessor KafkaRouteConsumer-GroupId: Consumer stopped
+17-02-2024 05:38:33.293 WARN o.s.b.f.s.DisposableBeanAdapter Invocation of close method failed on bean with name 'getInstance': Client is connected (32100)
+17-02-2024 05:38:33.295 INFO o.s.o.j.AbstractEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+17-02-2024 05:38:33.307 INFO c.z.h.HikariDataSource HikariPool-1 - Shutdown initiated...
+17-02-2024 05:38:33.333 INFO c.z.h.HikariDataSource HikariPool-1 - Shutdown completed.
+17-02-2024 05:38:45.112 INFO o.h.v.i.u.Version HV000001: Hibernate Validator 8.0.1.Final
+17-02-2024 05:38:45.235 INFO o.s.b.StartupInfoLogger Starting TeknofestProject3Application using Java 17.0.8 with PID 17000 (C:\Users\furka\Desktop\Kafka\teknofest-project-3\build\classes\java\main started by HONOR in C:\Users\furka\Desktop\Kafka\teknofest-project-3)
+17-02-2024 05:38:45.239 INFO o.s.b.SpringApplication The following 1 profile is active: "dev"
+17-02-2024 05:38:45.390 INFO o.s.b.l.DeferredLog Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+17-02-2024 05:38:45.391 INFO o.s.b.l.DeferredLog For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+17-02-2024 05:38:47.368 INFO o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+17-02-2024 05:38:47.504 INFO o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 116 ms. Found 1 JPA repository interface.
+17-02-2024 05:38:49.168 INFO o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+17-02-2024 05:38:49.190 INFO o.a.j.l.DirectJDKLog Initializing ProtocolHandler ["http-nio-8080"]
+17-02-2024 05:38:49.194 INFO o.a.j.l.DirectJDKLog Starting service [Tomcat]
+17-02-2024 05:38:49.195 INFO o.a.j.l.DirectJDKLog Starting Servlet engine: [Apache Tomcat/10.1.18]
+17-02-2024 05:38:49.376 INFO o.a.j.l.DirectJDKLog Initializing Spring embedded WebApplicationContext
+17-02-2024 05:38:49.380 INFO o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 3984 ms
+17-02-2024 05:38:49.791 INFO o.h.j.i.u.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+17-02-2024 05:38:49.939 INFO o.h.Version HHH000412: Hibernate ORM core version 6.2.20.Final
+17-02-2024 05:38:49.945 INFO o.h.c.Environment HHH000406: Using bytecode reflection optimizer
+17-02-2024 05:38:50.719 INFO o.s.o.j.p.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer
+17-02-2024 05:38:50.799 INFO c.z.h.HikariDataSource HikariPool-1 - Starting...
+17-02-2024 05:38:51.176 INFO c.z.h.p.HikariPool HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@43ebb82e
+17-02-2024 05:38:51.180 INFO c.z.h.HikariDataSource HikariPool-1 - Start completed.
+17-02-2024 05:38:51.315 WARN o.h.e.j.d.i.DialectFactoryImpl HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+17-02-2024 05:38:53.667 INFO o.h.e.t.j.p.i.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+17-02-2024 05:38:53.841 INFO o.s.o.j.AbstractEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+17-02-2024 05:38:55.351 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+17-02-2024 05:38:56.409 INFO o.s.b.d.a.OptionalLiveReloadServer LiveReload server is running on port 35729
+17-02-2024 05:38:56.525 INFO o.a.j.l.DirectJDKLog Starting ProtocolHandler ["http-nio-8080"]
+17-02-2024 05:38:56.610 INFO o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+17-02-2024 05:38:56.720 INFO o.a.k.c.c.AbstractConfig ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:59092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-KafkaRouteConsumer-GroupId-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = KafkaRouteConsumer-GroupId
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+17-02-2024 05:38:56.932 INFO o.a.k.c.u.AppInfoParser$AppInfo Kafka version: 3.4.1
+17-02-2024 05:38:56.934 INFO o.a.k.c.u.AppInfoParser$AppInfo Kafka commitId: 8a516edc2755df89
+17-02-2024 05:38:56.934 INFO o.a.k.c.u.AppInfoParser$AppInfo Kafka startTimeMs: 1708137536927
+17-02-2024 05:38:56.944 INFO o.a.k.c.c.KafkaConsumer [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Subscribed to topic(s): route
+17-02-2024 05:38:56.988 INFO o.s.b.StartupInfoLogger Started TeknofestProject3Application in 13.693 seconds (process running for 15.87)
+17-02-2024 05:38:57.907 INFO o.a.k.c.Metadata [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Resetting the last seen epoch of partition route-0 to 0 since the associated topicId changed from null to AMShfhJVTG6wyebKAZ6Htg
+17-02-2024 05:38:57.912 INFO o.a.k.c.Metadata [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Cluster ID: hNtzRzKdTvKtys62l18jpQ
+17-02-2024 05:38:57.914 INFO o.a.k.c.c.i.AbstractCoordinator$FindCoordinatorResponseHandler [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Discovered group coordinator localhost:59092 (id: 2147483646 rack: null)
+17-02-2024 05:38:57.921 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] (Re-)joining group
+17-02-2024 05:38:57.966 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Request joining group due to: need to re-join with the given member-id: consumer-KafkaRouteConsumer-GroupId-1-70dfa1a9-b885-4ef4-adb0-aa69aaa63f5e
+17-02-2024 05:38:57.968 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+17-02-2024 05:38:57.969 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] (Re-)joining group
+17-02-2024 05:39:00.988 INFO o.a.k.c.c.i.AbstractCoordinator$JoinGroupResponseHandler [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Successfully joined group with generation Generation{generationId=63, memberId='consumer-KafkaRouteConsumer-GroupId-1-70dfa1a9-b885-4ef4-adb0-aa69aaa63f5e', protocol='range'}
+17-02-2024 05:39:00.995 INFO o.a.k.c.c.i.ConsumerCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Finished assignment for group at generation 63: {consumer-KafkaRouteConsumer-GroupId-1-70dfa1a9-b885-4ef4-adb0-aa69aaa63f5e=Assignment(partitions=[route-0])}
+17-02-2024 05:39:01.023 INFO o.a.k.c.c.i.AbstractCoordinator$SyncGroupResponseHandler [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Successfully synced group in generation Generation{generationId=63, memberId='consumer-KafkaRouteConsumer-GroupId-1-70dfa1a9-b885-4ef4-adb0-aa69aaa63f5e', protocol='range'}
+17-02-2024 05:39:01.024 INFO o.a.k.c.c.i.ConsumerCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Notifying assignor about the new Assignment(partitions=[route-0])
+17-02-2024 05:39:01.030 INFO o.a.k.c.c.i.ConsumerCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Adding newly assigned partitions: route-0
+17-02-2024 05:39:01.062 INFO o.a.k.c.c.i.ConsumerCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Setting offset for partition route-0 to the committed offset FetchPosition{offset=58, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:59092 (id: 1 rack: null)], epoch=0}}
+17-02-2024 05:39:01.064 INFO o.s.c.l.LogAccessor KafkaRouteConsumer-GroupId: partitions assigned: [route-0]
+17-02-2024 05:39:13.809 INFO o.a.j.l.DirectJDKLog Initializing Spring DispatcherServlet 'dispatcherServlet'
+17-02-2024 05:39:13.810 INFO o.s.w.s.FrameworkServlet Initializing Servlet 'dispatcherServlet'
+17-02-2024 05:39:13.810 INFO o.s.w.s.FrameworkServlet Completed initialization in 0 ms
+17-02-2024 05:39:14.857 WARN o.s.w.s.h.AbstractHandlerExceptionResolver Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): expected a value]
+17-02-2024 05:39:27.789 INFO o.a.k.c.c.AbstractConfig ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:59092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 3000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 3000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+17-02-2024 05:39:27.821 INFO o.a.k.c.p.KafkaProducer [Producer clientId=producer-1] Instantiated an idempotent producer.
+17-02-2024 05:39:27.864 INFO o.a.k.c.u.AppInfoParser$AppInfo Kafka version: 3.4.1
+17-02-2024 05:39:27.864 INFO o.a.k.c.u.AppInfoParser$AppInfo Kafka commitId: 8a516edc2755df89
+17-02-2024 05:39:27.867 INFO o.a.k.c.u.AppInfoParser$AppInfo Kafka startTimeMs: 1708137567864
+17-02-2024 05:39:27.893 INFO o.a.k.c.Metadata [Producer clientId=producer-1] Resetting the last seen epoch of partition route-0 to 0 since the associated topicId changed from null to AMShfhJVTG6wyebKAZ6Htg
+17-02-2024 05:39:27.894 INFO o.a.k.c.Metadata [Producer clientId=producer-1] Cluster ID: hNtzRzKdTvKtys62l18jpQ
+17-02-2024 05:39:28.711 INFO o.a.k.c.p.i.TransactionManager [Producer clientId=producer-1] ProducerId set to 2000 with epoch 0
+17-02-2024 05:39:28.995 INFO c.t.s.KafkaConsumerService {"route":[9,8,7]}
+17-02-2024 05:39:29.010 INFO c.t.s.MqttService {"route":[9,8,7]}
+17-02-2024 05:40:24.319 INFO c.t.s.KafkaConsumerService {"route":[5,4,3]}
+17-02-2024 05:40:24.329 INFO c.t.s.MqttService {"route":[5,4,3]}
+17-02-2024 05:40:51.678 INFO o.a.k.c.c.i.ConsumerCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Revoke previously assigned partitions route-0
+17-02-2024 05:40:51.679 INFO o.s.c.l.LogAccessor KafkaRouteConsumer-GroupId: partitions revoked: [route-0]
+17-02-2024 05:40:51.681 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Member consumer-KafkaRouteConsumer-GroupId-1-70dfa1a9-b885-4ef4-adb0-aa69aaa63f5e sending LeaveGroup request to coordinator localhost:59092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+17-02-2024 05:40:51.683 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Resetting generation and member id due to: consumer pro-actively leaving the group
+17-02-2024 05:40:51.683 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Request joining group due to: consumer pro-actively leaving the group
+17-02-2024 05:40:51.684 INFO o.a.k.c.c.KafkaConsumer [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Unsubscribed all topics or patterns and assigned partitions
+17-02-2024 05:40:51.686 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Resetting generation and member id due to: consumer pro-actively leaving the group
+17-02-2024 05:40:51.686 INFO o.a.k.c.c.i.AbstractCoordinator [Consumer clientId=consumer-KafkaRouteConsumer-GroupId-1, groupId=KafkaRouteConsumer-GroupId] Request joining group due to: consumer pro-actively leaving the group
+17-02-2024 05:40:51.721 INFO o.a.k.c.m.Metrics Metrics scheduler closed
+17-02-2024 05:40:51.721 INFO o.a.k.c.m.Metrics Closing reporter org.apache.kafka.common.metrics.JmxReporter
+17-02-2024 05:40:51.722 INFO o.a.k.c.m.Metrics Metrics reporters closed
+17-02-2024 05:40:51.779 INFO o.a.k.c.u.AppInfoParser App info kafka.consumer for consumer-KafkaRouteConsumer-GroupId-1 unregistered
+17-02-2024 05:40:51.781 INFO o.s.c.l.LogAccessor KafkaRouteConsumer-GroupId: Consumer stopped
+17-02-2024 05:40:51.852 INFO o.a.k.c.p.KafkaProducer [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+17-02-2024 05:40:51.863 INFO o.a.k.c.m.Metrics Metrics scheduler closed
+17-02-2024 05:40:51.864 INFO o.a.k.c.m.Metrics Closing reporter org.apache.kafka.common.metrics.JmxReporter
+17-02-2024 05:40:51.865 INFO o.a.k.c.m.Metrics Metrics reporters closed
+17-02-2024 05:40:51.866 INFO o.a.k.c.u.AppInfoParser App info kafka.producer for producer-1 unregistered
+17-02-2024 05:40:51.881 WARN o.s.b.f.s.DisposableBeanAdapter Invocation of close method failed on bean with name 'getInstance': Client is connected (32100)
+17-02-2024 05:40:51.883 INFO o.s.o.j.AbstractEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+17-02-2024 05:40:51.908 INFO c.z.h.HikariDataSource HikariPool-1 - Shutdown initiated...
+17-02-2024 05:40:51.927 INFO c.z.h.HikariDataSource HikariPool-1 - Shutdown completed.

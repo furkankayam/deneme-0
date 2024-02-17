@@ -1,0 +1,67 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.1.8'
+	id 'io.spring.dependency-management' version '1.1.4'
+}
+
+group = 'com.teknofest'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '17'
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	// Data JPA
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	// Validation
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	// Spring Web
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	// Devtools
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	// PostgreSQL
+	runtimeOnly 'org.postgresql:postgresql'
+	// Lombok
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	// Eclipse Paho
+	implementation 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.5'
+	// Jackson
+	implementation 'com.fasterxml.jackson.core:jackson-databind:2.16.1'
+	// Kafka
+	implementation 'org.springframework.kafka:spring-kafka'
+	// Kafka Test
+	testImplementation 'org.springframework.kafka:spring-kafka-test'
+	// Logback Classic
+	implementation 'ch.qos.logback:logback-classic:1.4.14'
+	// Logstash Logback Encoder
+	implementation 'net.logstash.logback:logstash-logback-encoder:6.6'
+	// Logback JSON
+	implementation 'ch.qos.logback.contrib:logback-json-classic:0.1.2'
+	// Logback Jakson
+	implementation 'ch.qos.logback.contrib:logback-jackson:0.1.5'
+	// openapi
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0'
+	// Spring Test
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+
+tasks.named('bootBuildImage') {
+	builder = 'paketobuildpacks/builder-jammy-base:latest'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

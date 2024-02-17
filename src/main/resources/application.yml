@@ -1,0 +1,41 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/postgres}
+    username: ${DATABASE_USERNAME:postgres}
+    password: ${DATABASE_PASSWORD:postgres}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        #dialect: org.hibernate.dialect.PostgreSQLDialect
+        #format_sql: true
+        show_sql: true
+        type:
+          wrapper_array_handling: ALLOW
+    database: postgresql
+  # profile
+  profiles:
+    active: dev
+
+# Kafka
+kafka:
+  broker: localhost:59092
+  topic: 'route'
+
+# MQTT
+mqtt:
+  config:
+    url: 'tcp://192.168.56.1'
+  topic: 'route'
+  retained: 'true'
+  qos: '1'
+
+# Open API
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
